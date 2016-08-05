@@ -6,40 +6,20 @@ public class Puppy{
     String color;
     double weight;
     boolean likesWalk;
-    boolean isHyper;
+
 
     // Wrote a class titled Puppy with five properties
 
-    public Puppy(String breed, String color) {
+    public Puppy(String breed, String color, boolean likesWalk) {
         this.breed = breed;
         this.color = color;
-
+        this.likesWalk = likesWalk;
         //This is constructor for puppy with two arguments for breed and color
     }
 
-    public String isLazy(boolean isHyper){
-        if (this.isHyper) {
-
-            return "is a hyper dog!";
-
-        } else {
-
-            return "is a lazy puppy"; }
+    public String toString() {
+        return "This " +
+        this.color + this.breed + " weighs " + this.weight + "lbs!"; }
 
 
-        }
-
-    public String likesWalk(boolean likesWalk) {
-        if (this.likesWalk) {
-                return " and enjoys long walks."; }
-            else {
-                return " and hates to take long walks."; }
-
-
-            }
-    }
-    public String toString(){
-        return "This " this.color + this.breed + " weighs" + this.weight + "lbs" + this.isLazy() + " and" + this.likesWalk
-
-    }
 }

@@ -18,6 +18,14 @@ public class Main {
         puppy2.likesWalk =true;
         System.out.println(puppy2);
 
+        System.out.println("Is the poodle Hungry? " + puppy1.isHungry);
+        puppy1.giveTreat();
+
+        System.out.println("Is the poodle Hungry? " + puppy1.isHungry);
+
+        puppy1.gainsWeight();
+        System.out.println(puppy1);
+
 
     }
 
